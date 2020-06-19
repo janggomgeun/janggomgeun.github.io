@@ -6,5 +6,6 @@
 
 module.exports = {
   siteName: 'Gridsome',
+  siteUrl: 'https://janggomgeun.github.io',
   plugins: []
 }
