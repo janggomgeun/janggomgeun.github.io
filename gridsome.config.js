@@ -9,20 +9,54 @@ module.exports = {
   siteUrl: 'https://janggomgeun.github.io',
   plugins: [
     {
-      use: 'gridsome-plugin-tailwindcss',
-      /**
-      * These are the default options. You don't need to set any options to get
-      * going. Seriously, you don't need to declare tailwind.config.js.
-
+      use: '@gridsome/source-filesystem',
       options: {
-        tailwindConfig: './tailwind.config.js',
-        purgeConfig: {},
-        presetEnvConfig: {},
-        shouldPurge: true,
-        shouldImport: true,
-        shouldTimeTravel: true
+        path: 'contents/posts/**/*.md',
+        typeName: 'Post',
+        route: '/blog/:slug',
+        refs: {
+          tags: {
+            typeName: "Tag",
+            route: "/tag/:id",
+            create: true
+          }
+        }
       }
-      */
+    },
+    {
+      use: "@gridsome/plugin-google-analytics",
+      options: {
+        id: "UA-127350681-1"
+      }
+    },
+    {
+      use: "@gridsome/plugin-sitemap",
+      options: {
+        cacheTime: 600000, // default
+        exclude: ["/exclude-me"],
+        config: {
+          "/*": {
+            changefreq: "weekly",
+            priority: 0.5
+          }
+        }
+      }
     }
+    // {
+    //   use: 'gridsome-plugin-tailwindcss',
+    //   /**
+    //   * These are the default options. You don't need to set any options to get
+    //   * going. Seriously, you don't need to declare tailwind.config.js.
+
+    //   options: {
+    //     tailwindConfig: './tailwind.config.js',
+    //     purgeConfig: {},
+    //     presetEnvConfig: {},
+    //     shouldPurge: true,
+    //     shouldImport: true,
+    //     shouldTimeTravel: true
+    //   }
+    //   */
+    // }
   ]
 }
