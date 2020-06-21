@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <div>
+      <g-link to="/">Go back</g-link>
       <h1>{{ $page.post.title }}</h1>
       <p>{{ $page.post.date }} | {{ $page.post.timeToRead }} min read</p>
     </div>

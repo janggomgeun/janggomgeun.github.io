@@ -1,5 +1,5 @@
 ---
-path: "/blog/get-length-obj"
+path: "/posts/get-length-obj"
 date: "2019-05-04"
 title: "How to Get the Length of An Object"
 tags: ["object"]

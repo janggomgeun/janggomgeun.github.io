@@ -1,5 +1,5 @@
 ---
-path: "/blog/clone-array"
+path: "/posts/clone-array"
 date: "2019-05-04"
 title: "How to Clone Array in JavaScript"
 tags: ["array"]
