@@ -17,6 +17,6 @@
     "vue-disqus": "^4.0.0"
   },
   "devDependencies": {
-    "gridsome-plugin-tailwindcss": "^2.2.48"
+    "tailwindcss": "^1.4.6"
   }
 }
