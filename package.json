@@ -17,6 +17,7 @@
     "vue-disqus": "^4.0.0"
   },
   "devDependencies": {
-    "tailwindcss": "^1.4.6"
+    "tailwindcss": "^1.4.6",
+    "tailwindcss-multi-column": "^1.0.2"
   }
 }
