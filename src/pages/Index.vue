@@ -4,13 +4,24 @@
       <h1>Jang Gom Geun</h1>
       <button class="btn btn-blue">yahoo</button>
       <ul>
-        <li v-for="edge in $page.posts.edges" :key="edge.node.id">
+        <li v-for="edge in $page.principles.edges" :key="edge.node.id">
           <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
             <div class="sm:flex sm:items-center px-6 py-4">
               <g-link :to="edge.node.path">
                 <div class="mt-4 sm:mt-0 sm:ml-4 text-center sm:text-left">
                   <p class="text-xl leading-tight">{{ edge.node.title }}</p>
-                  <p class="text-sm leading-tight text-gray-600">{{ edge.node.date }}</p>
+                </div>
+              </g-link>
+            </div>
+          </div>
+          <br>
+        </li>
+        <li v-for="edge in $page.quotes.edges" :key="edge.node.id">
+          <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="sm:flex sm:items-center px-6 py-4">
+              <g-link :to="edge.node.path">
+                <div class="mt-4 sm:mt-0 sm:ml-4 text-center sm:text-left">
+                  <p class="text-xl leading-tight">{{ edge.node.quote }}</p>
                 </div>
               </g-link>
             </div>
@@ -35,13 +46,21 @@ export default {
 </style>
 <page-query>
 query {
-  posts: allPost {
+  principles: allPrinciple {
     edges {
       node {
         id
         path
         title
-        date
+      }
+    }
+  }
+  quotes: allQuote {
+    edges {
+      node {
+        id
+        quote
+        who_said_this
       }
     }
   }

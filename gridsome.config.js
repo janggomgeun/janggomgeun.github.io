@@ -4,27 +4,14 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 const tailwindcss = require("tailwindcss")
+const contents = require("./contents")
 
 module.exports = {
   siteName: 'Jang Gom Geun',
   siteUrl: 'https://janggomgeun.github.io',
   siteDescription: 'Software Engineer',
   plugins: [
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'contents/posts/**/*.md',
-        typeName: 'Post',
-        route: '/posts/:id',
-        refs: {
-          tags: {
-            typeName: "Tag",
-            route: "/tag/:id",
-            create: true
-          }
-        }
-      }
-    },
+    ...contents,
     {
       use: "@gridsome/plugin-google-analytics",
       options: {
