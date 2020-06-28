@@ -1,33 +1,57 @@
 <template>
   <Layout>
     <div class="ml-6">
-      <h1>Jang Gom Geun</h1>
-      <button class="btn btn-blue">yahoo</button>
+      <h1>
+        <span>interface</span> JangGomGeun
+      </h1>
+      <div>
+        <h2>wisdom</h2>
+        <ul>
+          <li>
+            <h3>quotes</h3>
+            <ul>
+              <li v-for="edge in $page.quotes.edges" :key="edge.node.id">
+                <g-link :to="edge.node.path">
+                  <div>
+                    <p>{{ edge.node.quote }}</p>
+                  </div>
+                </g-link>
+                <br>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>principles</h3>
+            <ul>
+              <li v-for="edge in $page.principles.edges" :key="edge.node.id">
+                <g-link :to="edge.node.path">
+                  <div>
+                    <p>{{ edge.node.title }}</p>
+                  </div>
+                </g-link>
+                <br>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>words</h3>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>expertise</h2>
+        <ul>
+        </ul>
+      </div>
+      <div>
+        <h2>thoughts</h2>
+      </div>
+      <div>
+        <h2>projects</h2>
+      </div>
       <ul>
-        <li v-for="edge in $page.principles.edges" :key="edge.node.id">
-          <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-            <div class="sm:flex sm:items-center px-6 py-4">
-              <g-link :to="edge.node.path">
-                <div class="mt-4 sm:mt-0 sm:ml-4 text-center sm:text-left">
-                  <p class="text-xl leading-tight">{{ edge.node.title }}</p>
-                </div>
-              </g-link>
-            </div>
-          </div>
-          <br>
-        </li>
-        <li v-for="edge in $page.quotes.edges" :key="edge.node.id">
-          <div class="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-            <div class="sm:flex sm:items-center px-6 py-4">
-              <g-link :to="edge.node.path">
-                <div class="mt-4 sm:mt-0 sm:ml-4 text-center sm:text-left">
-                  <p class="text-xl leading-tight">{{ edge.node.quote }}</p>
-                </div>
-              </g-link>
-            </div>
-          </div>
-          <br>
-        </li>
+        
+        
       </ul>
     </div>
   </Layout>
@@ -40,9 +64,11 @@ export default {
 };
 </script>
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 40px;
+} */
 </style>
 <page-query>
 query {

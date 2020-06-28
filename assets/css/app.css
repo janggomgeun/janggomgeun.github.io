@@ -1,15 +1,48 @@
 @tailwind base;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h1, .h1 {
+    @apply font-body;
+    @apply my-4;
+    @apply font-medium;
+    @apply text-4xl;
+}
+
+h2, .h2 {
+    @apply font-body;
+    @apply my-4;
+    @apply font-medium;
+    @apply text-3xl;
+}
+
+h3, .h3 {
+    @apply font-body;
+    @apply my-4;
+    @apply font-medium;
+    @apply text-2xl;
+}
+
+h4, .h4 {
+    @apply font-body;
+    @apply my-4;
+    @apply font-medium;
+    @apply text-xl;
+}
+
+h5, .h5 {
+    @apply font-body;
+    @apply my-4;
+    @apply font-medium;
+    @apply text-lg;
+}
+
+h6, .h6 {
+    @apply font-body;
+    @apply my-4;
+    @apply font-medium;
+    @apply text-base;
+}
+
 @tailwind components;
 @tailwind utilities;
-
-.btn {
-    @apply font-bold py-2 px-4 rounded;
-}
-
-.btn-blue {
-    @apply bg-blue-500 text-white font-bold py-2 px-4 border-b-4 border-blue-700  rounded
-}
-
-.btn-blue:hover {
-    @apply bg-blue-400 border-blue-500
-}
