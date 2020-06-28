@@ -11,35 +11,35 @@ h1, .h1 {
 
 h2, .h2 {
     @apply font-body;
-    @apply my-4;
+    @apply my-3;
     @apply font-medium;
     @apply text-3xl;
 }
 
 h3, .h3 {
     @apply font-body;
-    @apply my-4;
+    @apply my-2;
     @apply font-medium;
     @apply text-2xl;
 }
 
 h4, .h4 {
     @apply font-body;
-    @apply my-4;
+    @apply my-1;
     @apply font-medium;
     @apply text-xl;
 }
 
 h5, .h5 {
     @apply font-body;
-    @apply my-4;
+    @apply my-0;
     @apply font-medium;
     @apply text-lg;
 }
 
 h6, .h6 {
     @apply font-body;
-    @apply my-4;
+    @apply my-0;
     @apply font-medium;
     @apply text-base;
 }
