@@ -14,10 +14,10 @@
                 <li v-for="edge in $page.quotes.edges" :key="edge.node.id">
                   <div class="p-2">
                     <div class="inline-flex items-center bg-white leading-none text-purple-600 rounded-full p-2 shadow text-teal text-sm">
-                      <span class="inline-flex bg-indigo-600 text-white rounded-full h-6 px-3 justify-center items-center">new</span>
                       <g-link :to="edge.node.path">
-                        <span class="inline-flex px-2">{{ edge.node.quote }}</span>
+                        <span class="inline-flex px-2">"{{ edge.node.quote }}"</span>
                       </g-link>
+                      <span class="inline-flex bg-indigo-600 text-white rounded-full h-6 px-3 justify-center items-center">{{ edge.node.who_said_this }}</span>
                     </div>
                   </div>
                 </li>
@@ -44,6 +44,21 @@
         <div>
           <h2 class="underline">expertise</h2>
           <ul>
+            <li class="flex flex-row-reverse">
+              <h3 class="flex-initial">knowledges</h3>
+              <ul class="flex-initial">
+                <li v-for="edge in $page.knowledges.edges" :key="edge.node.id">
+                  <div class="p-2">
+                    <div class="inline-flex items-center bg-white leading-none text-purple-600 rounded-full p-2 shadow text-teal text-sm">
+                      <g-link :to="edge.node.path">
+                        <span class="inline-flex px-2">"{{ edge.node.title }}"</span>
+                      </g-link>
+                      <span class="inline-flex bg-indigo-600 text-white rounded-full h-6 px-3 justify-center items-center">{{ edge.node.created_at }}</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
         <div>
@@ -80,8 +95,19 @@ query {
     edges {
       node {
         id
+        path
         quote
         who_said_this
+      }
+    }
+  }
+  knowledges: allKnowledge {
+    edges {
+      node {
+        id
+        path
+        title
+        created_at
       }
     }
   }
