@@ -1,5 +1,4 @@
 ---
-path: "/posts/check-variable-number"
 title: "How to Check if a Variable is a Number"
 date: "2019-05-04"
 tags: ["number"]

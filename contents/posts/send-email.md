@@ -1,5 +1,4 @@
 ---
-path: "/posts/send-email"
 title: "How to Send Email with SendGrid in Node.js Apps"
 date: "2019-05-04"
 tags: ["array"]
