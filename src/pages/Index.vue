@@ -14,7 +14,7 @@
                 <li v-for="edge in $page.quotes.edges" :key="edge.node.id">
                   <div class="p-2">
                     <div class="inline-flex items-center bg-white leading-none text-purple-600 rounded-full p-2 shadow text-teal text-sm">
-                      <g-link :to="edge.node.path">
+                      <g-link>
                         <span class="inline-flex px-2">"{{ edge.node.quote }}"</span>
                       </g-link>
                       <span class="inline-flex bg-indigo-600 text-white rounded-full h-6 px-3 justify-center items-center">{{ edge.node.who_said_this }}</span>
@@ -29,7 +29,7 @@
                 <li v-for="edge in $page.principles.edges" :key="edge.node.id">
                   <div class="inline-flex items-center bg-white leading-none text-purple-600 rounded-full p-2 shadow text-teal text-sm">
                     <span class="inline-flex bg-blue-500 text-white rounded-full h-6 px-3 justify-center items-center">new</span>
-                    <g-link :to="edge.node.path">
+                    <g-link>
                       <span class="inline-flex px-2">{{ edge.node.title }}</span>
                     </g-link>
                   </div>
@@ -50,7 +50,7 @@
                 <li v-for="edge in $page.knowledges.edges" :key="edge.node.id">
                   <div class="p-2">
                     <div class="inline-flex items-center bg-white leading-none text-purple-600 rounded-full p-2 shadow text-teal text-sm">
-                      <g-link :to="edge.node.path">
+                      <g-link>
                         <span class="inline-flex px-2">"{{ edge.node.title }}"</span>
                       </g-link>
                       <span class="inline-flex bg-indigo-600 text-white rounded-full h-6 px-3 justify-center items-center">{{ edge.node.created_at }}</span>
