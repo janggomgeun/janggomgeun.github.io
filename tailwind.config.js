@@ -8,7 +8,7 @@ module.exports = {
       xl: '1280px',
     },
     fontFamily: {
-      body: ['Ubuntu Mono', 'sans-serif'],
+      body: ['Lato', 'sans-serif'],
     },
     borderWidth: {
       default: '1px',
