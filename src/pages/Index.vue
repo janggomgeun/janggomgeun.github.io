@@ -7,10 +7,10 @@
         <span class="title">JANG WOONG GEUN</span>
       </div>
       <div class="menu-items flex justify-between">
-        <span class="menu-items-item">WISDOM</span>
-        <span class="menu-items-item">EXPERTISE</span>
-        <span class="menu-items-item">THOUGHTs</span>
-        <span class="menu-items-item">PROJECTs</span>
+        <span class="menu-items-item mr-1">WISDOM</span>
+        <span class="menu-items-item mx-1">EXPERTISE</span>
+        <span class="menu-items-item mx-1">THOUGHTs</span>
+        <span class="menu-items-item ml-1">PROJECTs</span>
       </div>
       <br>
       <div class="search-box">
@@ -96,17 +96,19 @@
 }
 
 .menu-items-item {
-  @apply font-body antialiased;
+  @apply font-body antialiased underline;
   font-size: 35px;
   color: #404040;
 }
 
 .menu-items-item:hover {
-  @apply cursor-pointer underline;
+  @apply cursor-pointer;
+  background-color: #404040;
+  color: #fff;
 }
 
 .search-box {
-  @apply rounded-full border-4 font-body px-3;
+  @apply rounded-full border-4 font-body px-3 py-1;
   border-color: #404040;
 }
 
