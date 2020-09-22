@@ -1,5 +1,5 @@
 <template>
-  <div class="main-frame">
+  <div class="w-full flex justify-center">
     <slot />
   </div>
 </template>
@@ -11,7 +11,7 @@ query {
 }
 </static-query>
 <style>
-*, body {
+body {
   width: 100%;
   height: 100%;
 }

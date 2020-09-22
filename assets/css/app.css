@@ -1,48 +1,5 @@
-@tailwind base;
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
-h1, .h1 {
-    @apply font-body;
-    @apply my-4;
-    @apply font-medium;
-    @apply text-4xl;
-}
-
-h2, .h2 {
-    @apply font-body;
-    @apply my-3;
-    @apply font-medium;
-    @apply text-3xl;
-}
-
-h3, .h3 {
-    @apply font-body;
-    @apply my-2;
-    @apply font-medium;
-    @apply text-2xl;
-}
-
-h4, .h4 {
-    @apply font-body;
-    @apply my-1;
-    @apply font-medium;
-    @apply text-xl;
-}
-
-h5, .h5 {
-    @apply font-body;
-    @apply my-0;
-    @apply font-medium;
-    @apply text-lg;
-}
-
-h6, .h6 {
-    @apply font-body;
-    @apply my-0;
-    @apply font-medium;
-    @apply text-base;
-}
-
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
