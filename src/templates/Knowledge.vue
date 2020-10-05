@@ -12,7 +12,7 @@
 </template>
 <page-query>
 query Principle ($path: String!) {
-   knowledge: knowledge (path: $path) {
+  knowledge: knowledge (path: $path) {
     id
     title
     content

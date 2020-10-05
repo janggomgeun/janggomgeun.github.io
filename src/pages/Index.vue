@@ -6,10 +6,18 @@
         <img width="100%" src="../../assets/jang_woong_geun.svg" />
       </div>
       <div class="menu-items flex justify-between">
-        <span class="menu-items-item mr-1">WISDOM</span>
-        <span class="menu-items-item mx-1">EXPERTISE</span>
-        <span class="menu-items-item mx-1">THOUGHTs</span>
-        <span class="menu-items-item ml-1">PROJECTs</span>
+        <g-link to="/wisdom">
+          <span class="menu-items-item mr-1">WISDOM</span>
+        </g-link>
+        <g-link to="/expertise/knowledges">
+          <span class="menu-items-item mx-1">EXPERTISE</span>
+        </g-link>
+        <g-link to="/thoughts">
+          <span class="menu-items-item mx-1">THOUGHTs</span>
+        </g-link>
+        <g-link to="/projects">
+          <span class="menu-items-item ml-1">PROJECTs</span>
+        </g-link>
       </div>
       <div class="search-box">
         <input
@@ -28,6 +36,7 @@
         >
           <h2 class="font-2xl font-bold">{{ knowledge.node.title }}</h2>
           <p v-html="knowledge.node.content"></p>
+          <g-link :to="knowledge.node.path">more</g-link>
         </article>
       </div>
     </div>
