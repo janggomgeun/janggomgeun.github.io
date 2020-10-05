@@ -3,8 +3,7 @@
     <div class="min-w-md">
       <div class="h-64"></div>
       <div>
-        <span class="title-prefix">interface</span>
-        <span class="title">JANG WOONG GEUN</span>
+        <img width="100%" src="../../assets/jang_woong_geun.svg" />
       </div>
       <div class="menu-items flex justify-between">
         <span class="menu-items-item mr-1">WISDOM</span>
@@ -12,73 +11,31 @@
         <span class="menu-items-item mx-1">THOUGHTs</span>
         <span class="menu-items-item ml-1">PROJECTs</span>
       </div>
-      <br>
       <div class="search-box">
-        <input class="search focus:outline-none" type="search" name="search" id="search" placeholder="search...">
+        <input
+          class="search focus:outline-none"
+          type="search"
+          name="search"
+          id="search"
+          placeholder="search..."
+        />
       </div>
-      <br>
-      <div class="board">
-        <div class="m-2">
-          <div class="flex justify-center">
-            <svg >
-              <circle/>
-            </svg>
-            <div class="circle"></div>
-          </div>
-          <div>
-            <div></div>
-            <div class="tag-container">
-              <div class="flex flex-wrap bg-gray-600">
-                <div class="tag">Title 03</div>
-                <div class="tag">Title 05</div>
-              </div>
-            </div>
-            <div></div>
-          </div>
-          <div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-      <br>
-      <div class="board">
-        <div class="m-2">
-          <div class="flex justify-center">
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-          <div>
-            <div></div>
-            <div class="tag-container">
-              <ol>
-                <li>
-                  <div>
-                    <h1>Title 1</h1>
-                    <p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p>
-                    <p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p>
-                    <p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p>
-                    <p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p>
-                    <p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p>
-                    <p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p><p>정말 난 괜찮아</p>
-                  </div>
-                </li>
-              </ol>
-            </div>
-            <div></div>
-          </div>
-          <div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-          </div>
-        </div>
+      <br />
+      <div class="board p-10 max-w-md">
+        <article
+          v-for="knowledge in $page.allKnowledge.edges"
+          :key="knowledge.id"
+        >
+          <h2 class="font-2xl font-bold">{{ knowledge.node.title }}</h2>
+          <p v-html="knowledge.node.content"></p>
+        </article>
       </div>
     </div>
   </Layout>
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 
 .title-prefix {
   @apply font-body font-normal select-none;
@@ -102,7 +59,7 @@
 }
 
 .menu-items-item:hover {
-  @apply cursor-pointer;
+  @apply cursor-pointer rounded-md;
   background-color: #404040;
   color: #fff;
 }
@@ -130,46 +87,27 @@
   @apply rounded-full border-4 p-1 m-1;
   border-color: #404040;
 }
-
 </style>
 
 <script>
 export default {
   metaInfo: {
-    title: "Home"
-  }
+    title: "Home",
+  },
 };
 </script>
 <style>
 </style>
 <page-query>
 query {
-  principles: allPrinciple {
-    edges {
-      node {
-        id
-        path
-        title
-      }
-    }
-  }
-  quotes: allQuote {
-    edges {
-      node {
-        id
-        path
-        quote
-        who_said_this
-      }
-    }
-  }
-  knowledges: allKnowledge {
+  allKnowledge {
     edges {
       node {
         id
         path
         title
         created_at
+        content
       }
     }
   }

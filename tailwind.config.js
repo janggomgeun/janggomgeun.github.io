@@ -25,7 +25,7 @@ module.exports = {
         '128': '32rem',
       }
     },
-    columnCount: [ 1, 2, 3 ],
+    columnCount: [1, 2, 3],
     columnGap: { // will fallback to 'gap' || 'gridGap' values
       // sm: '1rem',
       // md: '1.5rem',
@@ -42,10 +42,10 @@ module.exports = {
       'none', 'hidden', 'dotted', 'dashed', 'solid',
       'double', 'groove', 'ridge', 'inset', 'outset',
     ],
-    columnFill: [ 'auto', 'balance', 'balance-all' ],
-    columnSpan: [ 'none', 'all' ],
+    columnFill: ['auto', 'balance', 'balance-all'],
+    columnSpan: ['none', 'all'],
   },
- 
+
   variants: { // all the following default to ['responsive']
     columnCount: ['responsive'],
     columnGap: ['responsive'],
@@ -56,7 +56,7 @@ module.exports = {
     columnFill: ['responsive'],
     columnSpan: ['responsive'],
   },
- 
+
   plugins: [
     require('tailwindcss-multi-column')(), // no options to configure
   ],
