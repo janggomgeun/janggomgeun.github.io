@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="w-3/6">
+    <div class="w-5/6 sm:w-4/6 md:w-3/6">
       <div class="h-64"></div>
       <div class="mb-2">
         <img width="100%" src="../../assets/jang_woong_geun.svg" />
