@@ -4,6 +4,8 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const contents = require('./contents')
+
 module.exports = {
   siteName: "Jang Gom Geun",
   siteUrl: "https://janggomgeun.github.io",
@@ -11,13 +13,7 @@ module.exports = {
     favicon: "src/favicon.png"
   },
   plugins: [
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'contents/projects/**/*.md',
-        typeName: 'Project'
-      }
-    },
+    ...contents,
     {
       use: '@gridsome/plugin-sitemap',
       options: {
