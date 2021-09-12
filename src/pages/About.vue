@@ -1,7 +1,5 @@
 <template>
-  <Layout>
-    
-  </Layout>
+  <div></div>
 </template>
 
 <script>
@@ -12,15 +10,15 @@ export default {
 
   data() {
     return {
-      alias: 'Wilson',
-      introduction: '',
+      alias: "Wilson",
+      introduction: "",
       contacts: [
         {
-          method: 'email',
-          value: '',
-        }
+          method: "email",
+          value: "",
+        },
       ],
-    }
+    };
   },
 };
 </script>

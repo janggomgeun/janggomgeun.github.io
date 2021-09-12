@@ -1,9 +1,9 @@
 <template>
-  <Layout>
+  <div>
     <div v-for="{ node } in $page.projects.edges" :key="node.id">
       <Project :data="node"></Project>
     </div>
-  </Layout>
+  </div>
 </template>
 
 <page-query>
