@@ -8,4 +8,7 @@ module.exports = {
   siteName: "Jang Gom Geun",
   siteUrl: "https://janggomgeun.github.io",
   plugins: []
+  icon: {
+    favicon: "src/favicon.png"
+  },
 }
