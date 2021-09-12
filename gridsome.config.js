@@ -7,8 +7,16 @@
 module.exports = {
   siteName: "Jang Gom Geun",
   siteUrl: "https://janggomgeun.github.io",
-  plugins: []
   icon: {
     favicon: "src/favicon.png"
   },
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/projects/**/*.md',
+        typeName: 'Project'
+      }
+    }
+  ]
 }
