@@ -5,20 +5,18 @@
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="nav__link" to="/about">About</g-link>
-        <g-link class="nav__link" to="/about/swot">SWOT</g-link>
-        <g-link class="nav__link" to="/about/focus">Focus</g-link>
-        <g-link class="nav__link" to="/about/preferences">Preferences</g-link>
-        <g-link class="nav__link" to="/about/principles">Principles</g-link>
-        <g-link class="nav__link" to="/about/retrospectives"
-          >Retrospectives</g-link
-        >
-        <g-link class="nav__link" to="/projects">Projects</g-link>
-        <g-link class="nav__link" to="/expertise/cheatsheets">Expertise</g-link>
-        <g-link class="nav__link" to="/expertise/how_it_works"
-          >How it works</g-link
-        >
-        <g-link class="nav__link" to="/expertise/what_is_it">What is it</g-link>
+        <g-link to="/interfaces">About</g-link>
+        <g-link to="/interfaces/interests">Interests</g-link>
+        <g-link to="/interfaces/preferences">Preferences</g-link>
+        <g-link to="/interfaces/principles">Principles</g-link>
+        <g-link to="/interfaces/retrospectives">Retrospectives</g-link>
+        <g-link to="/interfaces/swot">SWOT</g-link>
+        <g-link to="/interfaces/thoughts">Thoughts</g-link>
+
+        <g-link to="/projects">Projects</g-link>
+
+        <g-link to="/expertises/cheatsheets">Cheatsheets</g-link>
+        <g-link to="/expertises/mechanisms">Mechanisms</g-link>
       </nav>
     </header>
     <slot />

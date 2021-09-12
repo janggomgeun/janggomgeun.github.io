@@ -2,42 +2,42 @@ module.exports = [
   {
     use: '@gridsome/source-filesystem',
     options: {
-      path: 'contents/interface/interests/**/*.md',
-      typeName: 'Focus'
+      path: 'contents/interfaces/interests/**/*.md',
+      typeName: 'Interest'
     }
   },
   {
     use: '@gridsome/source-filesystem',
     options: {
-      path: 'contents/interface/preferences/**/*.md',
+      path: 'contents/interfaces/preferences/**/*.md',
       typeName: 'Preference'
     }
   },
   {
     use: '@gridsome/source-filesystem',
     options: {
-      path: 'contents/interface/principles/**/*.md',
+      path: 'contents/interfaces/principles/**/*.md',
       typeName: 'Principle'
     }
   },
   {
     use: '@gridsome/source-filesystem',
     options: {
-      path: 'contents/interface/retrospectives/**/*.md',
+      path: 'contents/interfaces/retrospectives/**/*.md',
       typeName: 'Retrospective'
     }
   },
   {
     use: '@gridsome/source-filesystem',
     options: {
-      path: 'contents/interface/swot/**/*.md',
+      path: 'contents/interfaces/swot/**/*.md',
       typeName: 'SWOT'
     }
   },
   {
     use: '@gridsome/source-filesystem',
     options: {
-      path: 'contents/interface/thoughts/**/*.md',
+      path: 'contents/interfaces/thoughts/**/*.md',
       typeName: 'Thought'
     }
   }
