@@ -1,14 +1,24 @@
 <template>
   <div>
     <div v-for="{ node } in $page.projects.edges" :key="node.id">
-      <Project :data="node"></Project>
+      <ProjectHeader :data="node"></ProjectHeader>
     </div>
   </div>
 </template>
 
+<script>
+import ProjectHeader from "~/components/ProjectHeader.vue";
+
+export default {
+  components: {
+    ProjectHeader,
+  },
+};
+</script>
+
 <page-query>
 query {
- 	projects: allProject {
+    projects: allProject {
     edges {
       node {
         id
@@ -100,13 +110,3 @@ query {
   }
 }
 </page-query>
-
-<script>
-import Project from "~/components/Project.vue";
-
-export default {
-  components: {
-    Project,
-  },
-};
-</script>
