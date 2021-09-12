@@ -5,6 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 const contents = require('./contents')
+const tailwind = require("tailwindcss");
+const postcssPlugins = [tailwind()];
 
 module.exports = {
   siteName: "Jang Gom Geun",
@@ -20,5 +22,12 @@ module.exports = {
         include: ['/about', 'expertises', 'projects']
       }
     }
-  ]
+  ],
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: postcssPlugins,
+      },
+    },
+  },
 }
