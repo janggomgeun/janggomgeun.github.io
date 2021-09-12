@@ -17,6 +17,12 @@ module.exports = {
         path: 'contents/projects/**/*.md',
         typeName: 'Project'
       }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        include: ['/about', 'expertises', 'projects']
+      }
     }
   ]
 }
