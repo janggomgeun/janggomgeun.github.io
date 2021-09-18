@@ -1,14 +1,30 @@
-# Default starter for Gridsome
+# My website
 
-This is the project you get when you run `gridsome create new-project`.
+목적은 바로 나의 인터페이스를 만드는 것.
 
-### 1. Install Gridsome CLI tool if you don't have
+외부 누군가가 내가 어떤 사람인지 이해하고,
 
-`npm install --global @gridsome/cli`
+제가 가진 지식을 공유받으며,
 
-### 2. Create a Gridsome project
+서로 소통할 수 있는 공간을 운영하는 것이 목적입니다.
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+그에 따라 다음과 같은 주제로 페이지를 만들어 보려고 합니다.
+
+- 최근 관심사
+- 취향: 좋아하는 것
+- 가치: 나의 가치관
+- 원칙: 나의 행동을 이끄는 규칙
+- 회고: 지난 날을 돌아보면서 복기하는 공간
+
+  - 과거
+    - 지난 날의 좋았던 점
+    - 지난 날의 나빴던 점
+  - 현재: 현재 상태 분석
+  - 미래: 앞으로의 비젼
+
+- 생각: 가지고 있는 생각들
+- 프로젝트: 진행한 프로젝트 이력
+- 프로덕트: 프로덕트
+- 전문지식
+  - 치트시트
+  - 메커니즘
