@@ -9,7 +9,7 @@ const tailwind = require("tailwindcss");
 const postcssPlugins = [tailwind()];
 
 module.exports = {
-  siteName: "Jang Gom Geun",
+  siteName: "interface JangGomGeun",
   siteUrl: "https://janggomgeun.github.io",
   icon: {
     favicon: "src/favicon.png"
