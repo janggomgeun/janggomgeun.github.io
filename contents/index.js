@@ -50,5 +50,19 @@ module.exports = [
       path: 'contents/projects/**/*.md',
       typeName: 'Project'
     }
+  },
+  {
+    use: '@gridsome/source-filesystem',
+    options: {
+      path: 'contents/expertises/cheatsheets/**/*.md',
+      typeName: 'Cheatsheet'
+    }
+  },
+  {
+    use: '@gridsome/source-filesystem',
+    options: {
+      path: 'contents/expertises/mechanisms/**/*.md',
+      typeName: 'Mechanism'
+    }
   }
 ]
