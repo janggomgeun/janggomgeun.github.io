@@ -1,16 +1,24 @@
 <template>
   <div class="flex flex-col min-h-screen my-4 mx-4 space-y-4">
-    <header class="sticky top-0 z-50 bg-white">
-      <div class="flex">
-        <strong class="flex">
+    <header class="sticky top-0 z-50 my-2 bg-white">
+      <div class="flex flex-col">
+        <strong>
           <span>interface</span>
-          <g-link class="text-5xl" to="/">{{
-            $static.metadata.siteName
-          }}</g-link>
-          <span class="text-5xl">&nbsp;{</span>
         </strong>
+        <div>
+          <strong>
+            <span>
+              <g-link class="text-4xl" to="/">
+                {{ $static.metadata.siteName }}
+              </g-link>
+            </span>
+          </strong>
+          <strong>
+            <span class="text-4xl">&nbsp;{</span>
+          </strong>
+        </div>
       </div>
-      <nav class="flex text-4xl mt-4">
+      <nav class="flex text-3xl mt-4">
         <div>
           <div class="rounded-lg bg-transparent">
             <!-- <g-link to="/interests">interests, </g-link>
