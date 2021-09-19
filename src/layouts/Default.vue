@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col min-h-screen my-4 mx-4 space-y-4">
-    <header class="header">
+    <header class="sticky top-0 z-50">
       <div>
         <strong class="flex">
           <span>interface</span>
@@ -10,7 +10,7 @@
           <span class="text-6xl">&nbsp;{</span>
         </strong>
       </div>
-      <nav class="text-4xl mt-4">
+      <nav class="flex text-4xl mt-4">
         <div>
           <div class="rounded-lg bg-transparent">
             <!-- <g-link to="/interests">interests, </g-link>

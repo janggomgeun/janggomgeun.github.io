@@ -2,7 +2,7 @@
   <div>
     <ul>
       <li
-        class="rounded-lg border-solid border-gray-800 border-4 mb-4 p-4 space-y-2"
+        class="rounded-2xl border-solid border-gray-800 border-4 mb-4 p-4 space-y-2"
         v-for="post in posts"
         :key="post.id"
       >
