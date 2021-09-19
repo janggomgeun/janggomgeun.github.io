@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col min-h-screen my-4 mx-4 space-y-4">
     <header class="sticky top-0 z-50">
-      <div>
+      <div class="flex">
         <strong class="flex">
           <span>interface</span>
           <g-link class="text-5xl" to="/">{{
