@@ -32,6 +32,7 @@
       </ul>
     </div>
     <div class="text-right">
+      <span>- </span>
       <span>a </span>
       <span>{{ data.owner.type }}</span>
       <span> project </span>
@@ -97,8 +98,9 @@
     <div v-if="data.references.length">
       <div><strong>참고</strong></div>
       <ul v-for="reference in data.references" :key="reference.id">
-        <li class="underline">
-          <g-link :href="reference.link">
+        <li>
+          <span>- </span>
+          <g-link class="underline" :href="reference.link">
             {{ reference.description }}
           </g-link>
         </li>
