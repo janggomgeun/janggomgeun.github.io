@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col min-h-screen my-4 mx-4 space-y-4">
-    <header class="sticky top-0 z-50">
+    <header class="sticky top-0 z-50 bg-white">
       <div class="flex">
         <strong class="flex">
           <span>interface</span>
