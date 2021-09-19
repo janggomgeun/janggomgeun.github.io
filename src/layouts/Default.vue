@@ -4,10 +4,10 @@
       <div>
         <strong class="flex">
           <span>interface</span>
-          <g-link class="text-6xl" to="/">{{
+          <g-link class="text-5xl" to="/">{{
             $static.metadata.siteName
           }}</g-link>
-          <span class="text-6xl">&nbsp;{</span>
+          <span class="text-5xl">&nbsp;{</span>
         </strong>
       </div>
       <nav class="flex text-4xl mt-4">
