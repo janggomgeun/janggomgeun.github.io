@@ -3,7 +3,7 @@
     <header class="sticky top-0 z-50 my-2 bg-white">
       <div class="flex flex-col">
         <strong>
-          <span>interface</span>
+          <span class="font-serif">interface</span>
         </strong>
         <div>
           <strong>
