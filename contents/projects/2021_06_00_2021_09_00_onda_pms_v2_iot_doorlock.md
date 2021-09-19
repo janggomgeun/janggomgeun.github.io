@@ -109,7 +109,5 @@ mine:
     - description: ""
       difficulties:
         - description: ""
-references:
-  - description: ""
-    link: ""
+references: ~
 ---

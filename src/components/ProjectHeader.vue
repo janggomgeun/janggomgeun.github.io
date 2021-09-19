@@ -1,47 +1,31 @@
 <template>
-  <div>
-    <div>{{ data.title }}</div>
+  <div class="rounded-lg border-solid border-gray-800 border-4 mb-4 p-4">
+    <strong class="text-2xl">{{ data.title }}</strong>
+    <div class="divide-y divide-gray-800">
+      <div></div>
+      <div></div>
+    </div>
     <div>
       <div>{{ data.goal.summary }}</div>
       <div>{{ data.goal.description }}</div>
     </div>
     <div>
-      <div>{{ data.period.startedAt }}</div>
-      <div>{{ data.period.finishedAt ? data.period.finishedAt : "" }}</div>
+      <span>{{ data.period.startedAt }}</span>
+      <span> ~ </span>
+      <span>{{
+        data.period.finishedAt ? data.period.finishedAt : "진행중"
+      }}</span>
     </div>
     <div>
-      <div v-for="service in data.techStack.services" :key="service.id">
-        <div>{{ service.name }}</div>
-        <div v-for="library in service.libraries" :key="library.id">
-          {{ library.name }}
-        </div>
-        <div v-for="sdk in service.sdks" :key="sdk.id">
-          {{ sdk.name }}
-        </div>
-        <div v-for="runtime in service.runtimes" :key="runtime.id">
-          {{ runtime.name }}
-        </div>
-        <div v-for="language in service.languages" :key="language.id">
-          {{ language.name }}
-        </div>
-      </div>
-      <div
-        v-for="infrastructure in data.techStack.infrastructures"
-        :key="infrastructure.id"
-      >
-        {{ infrastructure.name }}
-      </div>
-      <div v-for="tool in data.techStack.tools" :key="tool.id">
-        {{ tool.name }}
-      </div>
-    </div>
-
-    <div>
-      <div>{{ data.owner.name }}</div>
-      <div>{{ data.owner.type }}</div>
+      <span>a </span>
+      <span>{{ data.owner.type }}</span>
+      <span> project </span>
+      <span>by </span>
+      <span>{{ data.owner.name }}</span>
+      <span>, </span>
+      <span>{{ data.team.name }}</span>
     </div>
     <div>
-      <div>{{ data.team.name }}</div>
       <div v-for="part in data.team.parts" :key="part.id">
         <div>{{ part.name }}</div>
         <div>{{ part.role }}</div>
@@ -50,16 +34,75 @@
     </div>
     <div>
       <div>{{ data.mine.summary }}</div>
-      <div v-for="part in data.mine.parts" :key="part.id">
+      <ul v-for="part in data.mine.parts" :key="part.id">
         <div>{{ part.description }}</div>
-        <div v-for="difficulty in part.difficulties" :key="difficulty.id">
+        <li v-for="difficulty in part.difficulties" :key="difficulty.id">
           <div>{{ part.difficulty }}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="mt-2">
+      <div class="text-xl"><strong>테크스택</strong></div>
+      <div class="flex flex-start space-x-2">
+        <div v-for="service in data.techStack.services" :key="service.id">
+          <div>
+            <strong>
+              {{ service.name }}
+            </strong>
+          </div>
+          <span v-if="service.libraries.length">
+            <span v-for="library in service.libraries" :key="library.id">
+              {{ library.name }}
+            </span>
+            <span>, </span>
+          </span>
+          <span v-if="service.sdks.length">
+            <span v-for="sdk in service.sdks" :key="sdk.id">
+              {{ sdk.name }}
+            </span>
+            <span>, </span>
+          </span>
+          <span v-if="service.runtimes.length">
+            <span v-for="runtime in service.runtimes" :key="runtime.id">
+              {{ runtime.name }}
+            </span>
+            <span>, </span>
+          </span>
+          <span v-if="service.languages.length">
+            <span v-for="language in service.languages" :key="language.id">
+              {{ language.name }}
+            </span>
+            <span>, </span>
+          </span>
         </div>
       </div>
+      <div class="mt-1">
+        <span><strong>인프라</strong></span>
+        <span>: </span>
+        <span
+          v-for="infrastructure in data.techStack.infrastructures"
+          :key="infrastructure.id"
+        >
+          {{ infrastructure.name }}
+        </span>
+      </div>
+      <div class="mt-1">
+        <span><strong>도구</strong></span>
+        <span>: </span>
+        <span v-for="tool in data.techStack.tools" :key="tool.id">
+          {{ tool.name }}
+        </span>
+      </div>
     </div>
-    <div>
+
+    <div v-if="data.references.length">
+      <div><strong>참고</strong></div>
       <div v-for="reference in data.references" :key="reference.id">
-        {{ reference }}
+        <span class="underline"
+          ><g-link :href="reference.link">
+            {{ reference.description }}
+          </g-link></span
+        >
       </div>
     </div>
   </div>

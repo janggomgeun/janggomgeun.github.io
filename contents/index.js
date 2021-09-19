@@ -1,7 +1,4 @@
-const expertises = require('./expertises');
-
 module.exports = [
-  ...expertises,
   {
     use: '@gridsome/source-filesystem',
     options: {
