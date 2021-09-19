@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div v-for="{ node } in $page.projects.edges" :key="node.id">
-      <ProjectHeader :data="node"></ProjectHeader>
+    <div v-for="project in projects" :key="project.id">
+      <ProjectHeader :data="project"></ProjectHeader>
     </div>
   </div>
 </template>
@@ -12,6 +12,18 @@ import ProjectHeader from "~/components/ProjectHeader.vue";
 export default {
   components: {
     ProjectHeader,
+  },
+  computed: {
+    projects() {
+      const projects = this.$page.projects.edges
+        .map((edge) => edge.node)
+        .sort(
+          (a, b) =>
+            new Date(b.period.startedAt).getTime() -
+            new Date(a.period.startedAt).getTime()
+        );
+      return projects;
+    },
   },
 };
 </script>
