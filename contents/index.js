@@ -23,6 +23,13 @@ module.exports = [
   {
     use: '@gridsome/source-filesystem',
     options: {
+      path: 'contents/values/**/*.md',
+      typeName: 'Value'
+    }
+  },
+  {
+    use: '@gridsome/source-filesystem',
+    options: {
       path: 'contents/retrospectives/**/*.md',
       typeName: 'Retrospective'
     }
@@ -51,14 +58,14 @@ module.exports = [
   {
     use: '@gridsome/source-filesystem',
     options: {
-      path: 'contents/expertises/cheatsheets/**/*.md',
+      path: 'contents/cheatsheets/**/*.md',
       typeName: 'Cheatsheet'
     }
   },
   {
     use: '@gridsome/source-filesystem',
     options: {
-      path: 'contents/expertises/mechanisms/**/*.md',
+      path: 'contents/mechanisms/**/*.md',
       typeName: 'Mechanism'
     }
   }
