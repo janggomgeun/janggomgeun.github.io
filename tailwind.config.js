@@ -14,7 +14,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Lato']
+      sans: ["'Nanum Gothic'"]
     },
     extend: {},
   },

@@ -22,7 +22,7 @@
             <g-link to="/thoughts">thoughts, </g-link>
             <g-link to="/projects">projects, </g-link>
             <g-link to="/cheatsheets">cheatsheets, </g-link>
-            <g-link to="/mechanisms">mechanisms, </g-link>
+            <g-link to="/mechanisms">mechanisms</g-link>
           </div>
         </div>
       </nav>

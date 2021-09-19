@@ -96,13 +96,13 @@
 
     <div v-if="data.references.length">
       <div><strong>참고</strong></div>
-      <div v-for="reference in data.references" :key="reference.id">
-        <span class="underline"
-          ><g-link :href="reference.link">
+      <ul v-for="reference in data.references" :key="reference.id">
+        <li class="underline">
+          <g-link :href="reference.link">
             {{ reference.description }}
-          </g-link></span
-        >
-      </div>
+          </g-link>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
