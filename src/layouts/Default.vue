@@ -12,7 +12,7 @@
       </div>
       <nav class="text-4xl mt-4">
         <div>
-          <div class="rounded-lg p-4 bg-transparent bg-gray-900 text-white">
+          <div class="rounded-lg bg-transparent">
             <!-- <g-link to="/interests">interests, </g-link>
             <g-link to="/preferences">preferences, </g-link>
             <g-link to="/values">values, </g-link>
@@ -37,7 +37,7 @@
       </div>
     </header>
     <main class="flex-grow">
-      <div class="pt-4">
+      <div>
         <slot />
       </div>
     </main>
