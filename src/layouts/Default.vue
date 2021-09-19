@@ -10,11 +10,9 @@
           <span class="text-6xl">&nbsp;{</span>
         </strong>
       </div>
-    </header>
-    <main class="flex-grow">
-      <nav class="text-4xl">
+      <nav class="text-4xl mt-4">
         <div>
-          <div class="rounded-lg p-4 bg-gray-900 text-white">
+          <div class="rounded-lg p-4 bg-transparent bg-gray-900 text-white">
             <!-- <g-link to="/interests">interests, </g-link>
             <g-link to="/preferences">preferences, </g-link>
             <g-link to="/values">values, </g-link>
@@ -28,6 +26,17 @@
           </div>
         </div>
       </nav>
+      <div
+        class="flex h-12 mt-4 rounded-full border-gray-800 border-solid border-4"
+      >
+        <input
+          class="appearance-none w-full mx-4 focus:outline-none"
+          type="text"
+          placeholder="search keywords..."
+        />
+      </div>
+    </header>
+    <main class="flex-grow">
       <div class="pt-4">
         <slot />
       </div>

@@ -1,7 +1,11 @@
 ---
+title: "PMS 2.0 IoT 도어락 서비스"
+category: "project"
 createdAt: 2021-01-01
 updatedAt: 2020-01-23
-title: "PMS 2.0 IoT 도어락 서비스"
+publishements:
+  - version: 1.0.0
+    publishedAt: 2021-01-03 22:00:00
 goal:
   summary: "PMS 2.0(숙박관리 솔루션)에 IoT 도어락 서비스 개발 및 연동"
   description: ""

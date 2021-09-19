@@ -17,6 +17,7 @@ export default {
     projects() {
       const projects = this.$page.projects.edges
         .map((edge) => edge.node)
+        .filter((node) => node.publishements && node.publishements.length)
         .sort(
           (a, b) =>
             new Date(b.period.startedAt).getTime() -
@@ -45,6 +46,10 @@ query {
         excerpt
         createdAt
         updatedAt
+        publishements {
+          version
+          publishedAt
+        }
         title
         goal {
           summary

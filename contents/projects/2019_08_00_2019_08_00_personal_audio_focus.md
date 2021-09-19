@@ -1,7 +1,11 @@
 ---
+title: "Audio Focus"
+category: "project"
 createdAt: 2021-01-01
 updatedAt: 2020-01-23
-title: "Audio Focus"
+publishements:
+  - version: 1.0.0
+    publishedAt: 2021-01-03 22:00:00
 goal:
   summary: "현재 탭의 오디오를 제외하고는 다른 탭은 Focus Out되는 Chrome 확장 프로그램"
   description: ""
