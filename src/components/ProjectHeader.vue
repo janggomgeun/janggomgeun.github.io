@@ -1,6 +1,12 @@
 <template>
   <div class="rounded-lg border-solid border-gray-800 border-4 mb-4 p-4">
     <strong class="text-2xl">{{ data.title }}</strong>
+    <span>, </span>
+    <span>{{ data.period.startedAt }}</span>
+    <span> ~ </span>
+    <span>{{
+      data.period.finishedAt ? data.period.finishedAt : "진행중"
+    }}</span>
     <div class="divide-y divide-gray-800">
       <div></div>
       <div></div>
@@ -8,22 +14,6 @@
     <div>
       <div>{{ data.goal.summary }}</div>
       <div>{{ data.goal.description }}</div>
-    </div>
-    <div>
-      <span>{{ data.period.startedAt }}</span>
-      <span> ~ </span>
-      <span>{{
-        data.period.finishedAt ? data.period.finishedAt : "진행중"
-      }}</span>
-    </div>
-    <div>
-      <span>a </span>
-      <span>{{ data.owner.type }}</span>
-      <span> project </span>
-      <span>by </span>
-      <span>{{ data.owner.name }}</span>
-      <span>, </span>
-      <span>{{ data.team.name }}</span>
     </div>
     <div>
       <div v-for="part in data.team.parts" :key="part.id">
@@ -40,6 +30,15 @@
           <div>{{ part.difficulty }}</div>
         </li>
       </ul>
+    </div>
+    <div class="text-right">
+      <span>a </span>
+      <span>{{ data.owner.type }}</span>
+      <span> project </span>
+      <span>by </span>
+      <span>{{ data.owner.name }}</span>
+      <span>, </span>
+      <span>{{ data.team.name }}</span>
     </div>
     <div class="mt-2">
       <div class="text-xl"><strong>테크스택</strong></div>
