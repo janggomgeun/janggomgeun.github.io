@@ -1,5 +1,5 @@
 <template>
-  <div class="layout mt-4 mx-4 space-y-4">
+  <div class="flex flex-col min-h-screen my-4 mx-4 space-y-4">
     <header class="header">
       <div>
         <strong class="flex">
@@ -7,10 +7,11 @@
           <g-link class="text-6xl" to="/">{{
             $static.metadata.siteName
           }}</g-link>
+          <span class="text-6xl">&nbsp;{</span>
         </strong>
       </div>
     </header>
-    <main>
+    <main class="flex-grow">
       <nav class="text-4xl">
         <div>
           <div class="rounded-lg p-4 bg-gray-900 text-white">
@@ -30,6 +31,7 @@
         <slot />
       </div>
     </main>
+    <footer></footer>
   </div>
 </template>
 
