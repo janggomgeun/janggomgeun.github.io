@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <transition>
+    <transition name="fade" appear>
       <router-view />
     </transition>
   </Layout>
@@ -14,6 +14,16 @@ query {
   }
 }
 </static-query>
+
+<style>
+.fade-enter-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+</style>
 
 <script>
 export default {
