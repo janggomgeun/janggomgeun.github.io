@@ -13,17 +13,22 @@
           </g-link>
         </div>
         <nav class="w-full flex uppercase text-xl mt-4">
-          <ol class="flex w-full flex-wrap justify-evenly space-x-1">
-            <li><g-link to="/interests">interests</g-link></li>
-            <li><g-link to="/preferences">preferences</g-link></li>
-            <li><g-link to="/values">values</g-link></li>
-            <li><g-link to="/principles">principles</g-link></li>
-            <li><g-link to="/retrospectives">retrospectives</g-link></li>
-            <li><g-link to="/analysis">analysis</g-link></li>
-            <li><g-link to="/thoughts">thoughts</g-link></li>
-            <li><g-link to="/projects">projects</g-link></li>
-            <li><g-link to="/cheatsheets">cheatsheets</g-link></li>
-            <li><g-link to="/mechanisms">mechanisms</g-link></li>
+          <ol class="w-full">
+            <!-- <li><g-link to="/interests">interests</g-link></li>
+            <li><g-link to="/preferences">preferences</g-link></li> -->
+            <div class="flex w-full flex-wrap justify-center space-x-3">
+              <li><g-link to="/values">values</g-link></li>
+              <li><g-link to="/principles">principles</g-link></li>
+            </div>
+            <div class="flex w-full flex-wrap justify-center space-x-3">
+              <li><g-link to="/retrospectives">retrospectives</g-link></li>
+              <li><g-link to="/thoughts">thoughts</g-link></li>
+              <li><g-link to="/projects">projects</g-link></li>
+            </div>
+            <div class="flex w-full flex-wrap justify-center space-x-3">
+              <li><g-link to="/cheatsheets">cheatsheets</g-link></li>
+              <li><g-link to="/mechanisms">mechanisms</g-link></li>
+            </div>
           </ol>
         </nav>
         <div class="mt-4">
