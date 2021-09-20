@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-lg border-solid border-gray-800 border-4 mb-4 p-4">
+  <div class="board mb-4 p-4">
     <strong class="text-2xl">{{ data.title }}</strong>
     <span>, </span>
     <span>{{ data.period.startedAt }}</span>

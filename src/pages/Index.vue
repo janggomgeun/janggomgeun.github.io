@@ -1,28 +1,54 @@
 <template>
   <div>
     <ul>
-      <li class="board mb-4 p-4 space-y-2" v-for="post in posts" :key="post.id">
-        <div>
-          <strong class="text-2xl">
-            <g-link :to="post.id">{{ post.title }}</g-link>
-          </strong>
+      <li
+        class="board w-full lg:w-1/2 xl:w-1/2 2xl:w-1/3 mb-4 p-2 space-y-2"
+        v-for="post in posts"
+        :key="post.id"
+      >
+        <div class="flex h-3">
+          <div
+            class="h-3 w-3 border-black-olive border-solid rounded-full border-2"
+          ></div>
+          <div class="flex-grow">&nbsp;</div>
+          <div
+            class="h-3 w-3 border-black-olive border-solid rounded-full border-2"
+          ></div>
         </div>
-        <div>
-          <span class="rounded-full ring-1 p-0.5 ring-gray-700">
-            {{ post.category }}
-          </span>
-          <span>&nbsp;</span>
-          <span class="rounded-full ring-1 p-0.5 ring-gray-700">
-            v{{ post.publishements[post.publishements.length - 1].version }}
-          </span>
+        <div class="mx-3">
+          <div>
+            <strong class="text-xl">
+              <g-link :to="post.id">{{ post.title }}</g-link>
+            </strong>
+          </div>
+          <div>
+            <span class="rounded-full ring-1 p-0.5 ring-gray-700">
+              {{ post.category }}
+            </span>
+            <span>&nbsp;</span>
+            <span class="rounded-full ring-1 p-0.5 ring-gray-700">
+              v{{ post.publishements[post.publishements.length - 1].version }}
+            </span>
+          </div>
+          <div>
+            <span>
+              pulished at
+              {{
+                post.publishements[post.publishements.length - 1].publishedAt
+              }}
+            </span>
+          </div>
+          <div>{{ post.content }}</div>
         </div>
-        <div>
-          <span>
-            pulished at
-            {{ post.publishements[post.publishements.length - 1].publishedAt }}
-          </span>
+        <div class="flex h-3 ">
+          <div
+            class="h-3 w-3 border-black-olive border-solid rounded-full border-2"
+          ></div>
+          <div class="flex-grow">&nbsp;</div>
+          <div
+            class="h-3 w-3 border-black-olive border-solid rounded-full border-2"
+          ></div>
         </div>
-        <div>{{ post.content }}</div>
       </li>
     </ul>
   </div>

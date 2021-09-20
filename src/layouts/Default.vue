@@ -1,39 +1,59 @@
 <template>
-  <div class="flex flex-col min-h-screen my-4 mx-4 space-y-4">
-    <header class="sticky top-0 z-50 my-2 bg-white">
-      <div class="flex flex-col">
-        <strong>
-          <span class="font-serif">interface</span>
-        </strong>
-        <div>
-          <strong>
-            <span>
-              <g-link class="text-4xl" to="/">
-                {{ $static.metadata.siteName }}
-              </g-link>
-            </span>
-          </strong>
+  <div class="w-full flex flex-col lg:flex-row lg:space-x-10 h-screen">
+    <header
+      class="flex flex-col justify-end sticky h-1/2 lg:justify-center lg:h-full lg:w-1/3 xl:w-1/5 top-0 z-50 bg-white"
+    >
+      <div class="m-4">
+        <div class="w-full align-center">
+          <g-link class="w-full flex justify-center" to="/">
+            <img
+              class="bg-black-300 w-full sm:w-1/2 md:w-1/2 lg:w-full"
+              src="/svgs/title.svg"
+            />
+          </g-link>
         </div>
-      </div>
-      <nav class="flex text-3xl mt-4">
-        <div>
-          <div class="rounded-lg bg-transparent">
-            <!-- <g-link to="/interests">interests, </g-link>
-            <g-link to="/preferences">preferences, </g-link>
-            <g-link to="/values">values, </g-link>
-            <g-link to="/principles">principles, </g-link>
-            <g-link to="/retrospectives">retrospectives, </g-link>
-            <g-link to="/analysis">analysis, </g-link>
-            <g-link to="/thoughts">thoughts, </g-link> -->
-            <g-link to="/projects">projects</g-link>
-            <!-- <g-link to="/cheatsheets">cheatsheets, </g-link> -->
-            <!-- <g-link to="/mechanisms">mechanisms</g-link> -->
+        <nav class="w-full flex uppercase text-xl mt-4">
+          <ol class="flex w-full flex-wrap justify-evenly space-x-1">
+            <li><g-link to="/interests">interests</g-link></li>
+            <li><g-link to="/preferences">preferences</g-link></li>
+            <li><g-link to="/values">values</g-link></li>
+            <li><g-link to="/principles">principles</g-link></li>
+            <li><g-link to="/retrospectives">retrospectives</g-link></li>
+            <li><g-link to="/analysis">analysis</g-link></li>
+            <li><g-link to="/thoughts">thoughts</g-link></li>
+            <li><g-link to="/projects">projects</g-link></li>
+            <li><g-link to="/cheatsheets">cheatsheets</g-link></li>
+            <li><g-link to="/mechanisms">mechanisms</g-link></li>
+          </ol>
+        </nav>
+        <div class="mt-4">
+          <div class="flex justify-center space-x-2">
+            <div
+              class="w-5 h-5 md:h-10 md:w-10"
+              v-for="item in [
+                { name: 'github', link: 'https://github.com/janggomgeun' },
+                {
+                  name: 'youtube',
+                  link:
+                    'https://www.youtube.com/channel/UCOk-C4jVNuCVzQHviJE8nQg',
+                },
+                {
+                  name: 'linkedin',
+                  link: 'https://www.linkedin.com/in/woong-geun-jang-94859855/',
+                },
+              ]"
+              :key="item.id"
+            >
+              <g-link :to="item.link">
+                <FontAwesomeIcon :icon="['fab', `${item.name}`]" />
+              </g-link>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
-    <main class="flex-grow">
-      <div>
+    <main class="m-4 lg:w-2/3 lg:flex-grow">
+      <div class="lg:flex-grow">
         <slot />
       </div>
     </main>
