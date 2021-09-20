@@ -13,9 +13,6 @@
               </g-link>
             </span>
           </strong>
-          <strong>
-            <span class="text-4xl">&nbsp;{</span>
-          </strong>
         </div>
       </div>
       <nav class="flex text-3xl mt-4">
@@ -34,15 +31,6 @@
           </div>
         </div>
       </nav>
-      <div
-        class="flex h-12 mt-4 rounded-full border-gray-800 border-solid border-4"
-      >
-        <input
-          class="appearance-none w-full mx-4 focus:outline-none"
-          type="text"
-          placeholder="search keywords..."
-        />
-      </div>
     </header>
     <main class="flex-grow">
       <div>
