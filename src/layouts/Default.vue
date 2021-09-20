@@ -50,6 +50,17 @@
             </div>
           </div>
         </div>
+        <div class="mt-4">
+          <div class="search-box">
+            <div class="mx-4 my-2">
+              <input
+                class="appearance-none w-full leading-tight focus:outline-none focus:shadow-outline"
+                type="text"
+                placeholder="search keyword..."
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main class="m-4 lg:w-2/3 lg:flex-grow">

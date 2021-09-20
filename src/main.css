@@ -17,6 +17,10 @@ html {
   @apply text-black-olive;
 }
 
+.search-box {
+  @apply border-4 border-solid border-black-olive rounded-full shadow-cartoon-black-olive;
+}
+
 .board {
   @apply border-4 border-solid border-black-olive rounded-lg shadow-cartoon-black-olive;
 }
