@@ -5,10 +5,10 @@ require("~/main.css");
 import DefaultLayout from '~/layouts/Default.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { config, library } from '@fortawesome/fontawesome-svg-core'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 config.autoAddCss = false
-library.add(faGithub)
+library.add(faGithub, faLinkedin, faYoutube)
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
