@@ -12,3 +12,7 @@
     src: url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
   }
 }
+
+html {
+  @apply text-black-olive;
+}
