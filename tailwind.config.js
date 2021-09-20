@@ -20,6 +20,9 @@ module.exports = {
     extend: {
       colors: {
         'black-olive': '#404040'
+      },
+      boxShadow: {
+        'cartoon-black-olive': '0px 4px 0px #404040'
       }
     },
   },
