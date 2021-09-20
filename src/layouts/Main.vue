@@ -17,17 +17,45 @@
             <!-- <li><g-link to="/interests">interests</g-link></li>
             <li><g-link to="/preferences">preferences</g-link></li> -->
             <div class="flex w-full flex-wrap justify-center space-x-3">
-              <li><g-link to="/values">values</g-link></li>
-              <li><g-link to="/principles">principles</g-link></li>
+              <li
+                class="rounded-full px-3 hover:bg-black-olive hover:text-white"
+              >
+                <g-link to="/values">values</g-link>
+              </li>
+              <li
+                class="rounded-full px-3 hover:bg-black-olive hover:text-white"
+              >
+                <g-link to="/principles">principles</g-link>
+              </li>
             </div>
             <div class="flex w-full flex-wrap justify-center space-x-3">
-              <li><g-link to="/retrospectives">retrospectives</g-link></li>
-              <li><g-link to="/thoughts">thoughts</g-link></li>
-              <li><g-link to="/projects">projects</g-link></li>
+              <li
+                class="rounded-full px-3 hover:bg-black-olive hover:text-white"
+              >
+                <g-link to="/retrospectives">retrospectives</g-link>
+              </li>
+              <li
+                class="rounded-full px-3 hover:bg-black-olive hover:text-white"
+              >
+                <g-link to="/thoughts">thoughts</g-link>
+              </li>
+              <li
+                class="rounded-full px-3 hover:bg-black-olive hover:text-white"
+              >
+                <g-link to="/projects">projects</g-link>
+              </li>
             </div>
             <div class="flex w-full flex-wrap justify-center space-x-3">
-              <li><g-link to="/cheatsheets">cheatsheets</g-link></li>
-              <li><g-link to="/mechanisms">mechanisms</g-link></li>
+              <li
+                class="rounded-full px-3 hover:bg-black-olive hover:text-white"
+              >
+                <g-link to="/cheatsheets">cheatsheets</g-link>
+              </li>
+              <li
+                class="rounded-full px-3 hover:bg-black-olive hover:text-white"
+              >
+                <g-link to="/mechanisms">mechanisms</g-link>
+              </li>
             </div>
           </ol>
         </nav>
