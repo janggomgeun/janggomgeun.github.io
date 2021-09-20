@@ -16,7 +16,7 @@
           <ol class="w-full">
             <!-- <li><g-link to="/interests">interests</g-link></li>
             <li><g-link to="/preferences">preferences</g-link></li> -->
-            <div class="flex w-full flex-wrap justify-center space-x-3">
+            <!-- <div class="flex w-full flex-wrap justify-center space-x-3">
               <li
                 class="rounded-full px-3 hover:bg-black-olive hover:text-white"
               >
@@ -27,9 +27,9 @@
               >
                 <g-link to="/principles">principles</g-link>
               </li>
-            </div>
+            </div> -->
             <div class="flex w-full flex-wrap justify-center space-x-3">
-              <li
+              <!-- <li
                 class="rounded-full px-3 hover:bg-black-olive hover:text-white"
               >
                 <g-link to="/retrospectives">retrospectives</g-link>
@@ -38,14 +38,14 @@
                 class="rounded-full px-3 hover:bg-black-olive hover:text-white"
               >
                 <g-link to="/thoughts">thoughts</g-link>
-              </li>
+              </li> -->
               <li
                 class="rounded-full px-3 hover:bg-black-olive hover:text-white"
               >
                 <g-link to="/projects">projects</g-link>
               </li>
             </div>
-            <div class="flex w-full flex-wrap justify-center space-x-3">
+            <!-- <div class="flex w-full flex-wrap justify-center space-x-3">
               <li
                 class="rounded-full px-3 hover:bg-black-olive hover:text-white"
               >
@@ -56,7 +56,7 @@
               >
                 <g-link to="/mechanisms">mechanisms</g-link>
               </li>
-            </div>
+            </div> -->
           </ol>
         </nav>
         <div class="mt-4">
