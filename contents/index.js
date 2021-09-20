@@ -37,13 +37,6 @@ module.exports = [
   {
     use: '@gridsome/source-filesystem',
     options: {
-      path: 'contents/analyses/**/*.md',
-      typeName: 'Analysis'
-    }
-  },
-  {
-    use: '@gridsome/source-filesystem',
-    options: {
       path: 'contents/thoughts/**/*.md',
       typeName: 'Thought'
     }
