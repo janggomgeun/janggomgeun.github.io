@@ -16,3 +16,7 @@
 html {
   @apply text-black-olive;
 }
+
+.board {
+  @apply border-4 border-solid border-black-olive rounded-lg shadow-cartoon-black-olive;
+}
