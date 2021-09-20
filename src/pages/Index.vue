@@ -1,11 +1,7 @@
 <template>
   <div>
     <ul>
-      <li
-        class="rounded-2xl border-solid border-gray-800 border-4 mb-4 p-4 space-y-2"
-        v-for="post in posts"
-        :key="post.id"
-      >
+      <li class="board mb-4 p-4 space-y-2" v-for="post in posts" :key="post.id">
         <div>
           <strong class="text-2xl">
             <g-link :to="post.id">{{ post.title }}</g-link>
