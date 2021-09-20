@@ -17,7 +17,11 @@ module.exports = {
       sans: ["'Nanum Gothic'"],
       serif: ["'Nanum Brush Script'"]
     },
-    extend: {},
+    extend: {
+      colors: {
+        'black-olive': '#404040'
+      }
+    },
   },
   variants: {
     extend: {},
