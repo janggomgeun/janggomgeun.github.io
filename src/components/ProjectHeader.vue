@@ -1,14 +1,5 @@
 <template>
   <div class="board mb-4 p-4">
-    <div class="flex h-3">
-      <div
-        class="h-3 w-3 border-black-olive border-solid rounded-full border-2"
-      ></div>
-      <div class="flex-grow">&nbsp;</div>
-      <div
-        class="h-3 w-3 border-black-olive border-solid rounded-full border-2"
-      ></div>
-    </div>
     <div class="mx-3">
       <strong class="text-2xl">{{ data.title }}</strong>
       <span>, </span>
@@ -116,15 +107,6 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="flex h-3">
-      <div
-        class="h-3 w-3 border-black-olive border-solid rounded-full border-2"
-      ></div>
-      <div class="flex-grow">&nbsp;</div>
-      <div
-        class="h-3 w-3 border-black-olive border-solid rounded-full border-2"
-      ></div>
     </div>
   </div>
 </template>
