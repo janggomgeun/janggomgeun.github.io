@@ -14,7 +14,7 @@ period:
   finishedAt: "2021-09"
 techStack:
   services:
-    - name: "PMS Connectivity API"
+    - name: "API Gateway"
       libraries:
         - name: "GraphQL request"
           slug: "graphql-request"
@@ -30,7 +30,7 @@ techStack:
         - name: "TypeScript"
           slug: "typescript"
       others: ~
-    - name: "PMS Core"
+    - name: "Core Backend"
       libraries:
         - name: "KafkaJS"
           slug: "kafkajs"
@@ -51,7 +51,7 @@ techStack:
         - name: "TypeScript"
           slug: "typescript"
       others: ~
-    - name: "PMS Web"
+    - name: "Web Frontend"
       libraries:
         - name: "dayjs"
           slug: "dayjs"
